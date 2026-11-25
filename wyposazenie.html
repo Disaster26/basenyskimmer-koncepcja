@@ -167,6 +167,17 @@ p{margin:0 0 16px}
 .siatka img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .5s}
 .siatka figure:hover img{transform:scale(1.03)}
 .siatka figcaption{padding:14px 2px 4px;font:600 15px/1.3 "Montserrat",sans-serif;color:var(--granat)}
+.siatka.gesta{grid-template-columns:repeat(4,1fr);gap:12px}
+.siatka.gesta img{aspect-ratio:4/3}
+.produkty{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.produkty figure{margin:0;background:#fff;border-radius:4px 4px 24px 4px;overflow:hidden;display:flex;flex-direction:column}
+.produkty .pf{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:14px}
+.produkty .pf img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.produkty figcaption{padding:12px 16px 18px;border-top:1px solid var(--linia);font:600 15px/1.3 "Montserrat",sans-serif;color:var(--granat)}
+.produkty figcaption span{display:block;font:400 14px/1.45 "Manrope",sans-serif;color:var(--tekst2);margin-top:4px}
+@media (max-width:1240px){.siatka.gesta{grid-template-columns:repeat(3,1fr)}.produkty{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:900px){.produkty{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:767px){.siatka.gesta{grid-template-columns:repeat(2,1fr);gap:8px}.produkty{grid-template-columns:repeat(2,1fr);gap:10px}.produkty .pf{padding:10px}.produkty figcaption{padding:10px 12px 14px;font-size:14px}.produkty figcaption span{font-size:13px}}
 .siatka figcaption span{display:block;font:400 15px/1.5 "Manrope",sans-serif;color:var(--tekst2);margin-top:4px}
 .inne{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;list-style:none;margin:30px 0 0;padding:0}
 .inne a{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 0;border-top:1px solid var(--linia);font:700 18px/1.3 "Montserrat",sans-serif;color:var(--granat);text-decoration:none}
@@ -351,7 +362,32 @@ form.zap .btn{margin-top:22px}
   </div>
   <div style="display:grid;gap:16px" data-lb-grupa>
    <figure class="ramka"><a href="img/f-roleta-1400.webp" data-lb data-cap="Basen z roletą na zwijaczu"><img src="img/f-roleta-1000.webp" srcset="img/f-roleta-600.webp 600w, img/f-roleta-1000.webp 1000w, img/f-roleta-1400.webp 1400w" sizes="(max-width:900px) 100vw, 600px" width="1000" height="700" alt="Basen ogrodowy z roletą przykrywającą nawiniętą na zwijacz" loading="lazy"></a></figure>
-   <figure class="ramka" style="border-radius:6px 6px 6px 40px"><a href="img/g-basen-wewnetrzny-1000.webp" data-lb data-cap="Basen wewnętrzny z robotem czyszczącym"><img src="img/g-basen-wewnetrzny-1000.webp" srcset="img/g-basen-wewnetrzny-600.webp 600w, img/g-basen-wewnetrzny-1000.webp 1000w" sizes="(max-width:900px) 100vw, 600px" width="1000" height="488" alt="Basen wewnętrzny z robotem czyszczącym na dnie" loading="lazy"></a></figure>
+   <figure class="ramka" style="border-radius:6px 6px 6px 40px"><a href="img/g-bw-02-1600.webp" data-lb data-cap="Basen wewnętrzny z roletą"><img src="img/k-bw-02-720.webp" srcset="img/k-bw-02-480.webp 480w, img/k-bw-02-720.webp 720w, img/k-bw-02-960.webp 960w" sizes="(max-width:900px) 100vw, 600px" width="720" height="450" alt="Basen wewnętrzny z roletą przykrywającą i jasną opaską" loading="lazy"></a></figure>
+  </div>
+ </div>
+</section>
+<section class="sek szary">
+ <div class="w">
+  <div class="glowa">
+   <div><h2>Wybrane produkty z oferty</h2><svg class="fala" viewBox="0 0 120 14" aria-hidden="true"><path d="M2 9C20 1 36 1 60 7S100 13 118 5"/></svg></div>
+   <p>Przykłady urządzeń i akcesoriów, które sprzedajemy i montujemy. Dobieramy je do konkretnego basenu, więc o szczegóły i ceny najlepiej zapytać.</p>
+  </div>
+  <div class="produkty">
+<figure><div class="pf"><img src="img/p-wy-01-360.webp" srcset="img/p-wy-01-360.webp 360w" sizes="(max-width:767px) 44vw, 260px" width="360" height="229" alt="Roleta podwodna - przykrycie zwijane w niszy pod wodą" loading="lazy"></div><figcaption>Roleta podwodna<span>Przykrycie zwijane w niszy pod wodą</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-02-360.webp" srcset="img/p-wy-02-360.webp 360w" sizes="(max-width:767px) 44vw, 260px" width="360" height="409" alt="Filtr piaskowy - filtracja wody basenowej" loading="lazy"></div><figcaption>Filtr piaskowy<span>Filtracja wody basenowej</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-03-360.webp" srcset="img/p-wy-03-360.webp 360w, img/p-wy-03-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="231" alt="Zestaw filtracyjny - pompa i filtr w jednym zestawie" loading="lazy"></div><figcaption>Zestaw filtracyjny<span>Pompa i filtr w jednym zestawie</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-04-360.webp" srcset="img/p-wy-04-360.webp 360w, img/p-wy-04-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="205" alt="Pompa basenowa - obieg wody przez filtr" loading="lazy"></div><figcaption>Pompa basenowa<span>Obieg wody przez filtr</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-05-360.webp" srcset="img/p-wy-05-360.webp 360w, img/p-wy-05-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="449" alt="Automatyczny zawór filtracji - sterowanie płukaniem filtra" loading="lazy"></div><figcaption>Automatyczny zawór filtracji<span>Sterowanie płukaniem filtra</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-06-360.webp" srcset="img/p-wy-06-360.webp 360w, img/p-wy-06-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="431" alt="Pompa ciepła - podgrzewanie wody w basenie" loading="lazy"></div><figcaption>Pompa ciepła<span>Podgrzewanie wody w basenie</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-07-360.webp" srcset="img/p-wy-07-360.webp 360w, img/p-wy-07-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="174" alt="Pompy ciepła inwerterowe - różne moce do wielkości basenu" loading="lazy"></div><figcaption>Pompy ciepła inwerterowe<span>Różne moce do wielkości basenu</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-08-360.webp" srcset="img/p-wy-08-360.webp 360w, img/p-wy-08-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="360" alt="Wymiennik ciepła - podgrzewanie wody z instalacji domu" loading="lazy"></div><figcaption>Wymiennik ciepła<span>Podgrzewanie wody z instalacji domu</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-09-360.webp" srcset="img/p-wy-09-360.webp 360w, img/p-wy-09-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="269" alt="Przeciwprąd - pływanie w miejscu i masaż wodny" loading="lazy"></div><figcaption>Przeciwprąd<span>Pływanie w miejscu i masaż wodny</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-10-360.webp" srcset="img/p-wy-10-360.webp 360w, img/p-wy-10-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="284" alt="Robot czyszczący - automatyczne czyszczenie dna i ścian" loading="lazy"></div><figcaption>Robot czyszczący<span>Automatyczne czyszczenie dna i ścian</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-11-360.webp" srcset="img/p-wy-11-360.webp 360w" sizes="(max-width:767px) 44vw, 260px" width="360" height="173" alt="Lampy UV - dezynfekcja wody światłem uv" loading="lazy"></div><figcaption>Lampy UV<span>Dezynfekcja wody światłem UV</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-12-360.webp" srcset="img/p-wy-12-360.webp 360w, img/p-wy-12-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="185" alt="Elektroliza soli - dezynfekcja wody z soli" loading="lazy"></div><figcaption>Elektroliza soli<span>Dezynfekcja wody z soli</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-13-360.webp" srcset="img/p-wy-13-360.webp 360w, img/p-wy-13-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="290" alt="Chemia basenowa - środki do pielęgnacji wody" loading="lazy"></div><figcaption>Chemia basenowa<span>Środki do pielęgnacji wody</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-14-360.webp" srcset="img/p-wy-14-360.webp 360w, img/p-wy-14-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="217" alt="Kamień brzegowy - opaska basenu, także na łuki" loading="lazy"></div><figcaption>Kamień brzegowy<span>Opaska basenu, także na łuki</span></figcaption></figure>
+<figure><div class="pf"><img src="img/p-wy-15-360.webp" srcset="img/p-wy-15-360.webp 360w, img/p-wy-15-720.webp 720w" sizes="(max-width:767px) 44vw, 260px" width="360" height="184" alt="Kamień brzegowy prosty - wykończenie krawędzi basenu" loading="lazy"></div><figcaption>Kamień brzegowy prosty<span>Wykończenie krawędzi basenu</span></figcaption></figure>
   </div>
  </div>
 </section>
@@ -383,7 +419,7 @@ form.zap .btn{margin-top:22px}
  <div class="ck-ust" hidden><label><input type="checkbox" checked disabled> Niezbędne</label><label><input type="checkbox" id="ck-mapy" checked> Mapy Google</label></div>
  <div class="ck-btn"><button type="button" class="gl" data-ck="wszystkie">Akceptuję</button><button type="button" data-ck="niezbedne">Tylko niezbędne</button><button type="button" data-ck="ustawienia">Ustawienia</button></div>
 </div>
-<script>try{var z=JSON.parse(localStorage.getItem('skimmer_zgody'));if(!z||Date.now()-z.t>31536e6)throw 0}catch(e){document.getElementById('ck').hidden=false}</script>
+<script>(function(){if(document.querySelector('meta[data-podglad]'))return;try{var z=JSON.parse(localStorage.getItem('skimmer_zgody'));if(!z||Date.now()-z.t>31536e6)throw 0}catch(e){document.getElementById('ck').hidden=false}})()</script>
 <script src="js/strona.js" defer></script>
 </body>
 </html>
