@@ -62,32 +62,6 @@
   ost=a;lb.hidden=false;d.documentElement.style.overflow='hidden';pokaz(grupa.indexOf(a));lb.querySelector('.lb-x').focus();
  });
 
- /* zgody cookies */
- var KL='skimmer_zgody';
- function czytaj(){try{var z=JSON.parse(localStorage.getItem(KL));if(z&&Date.now()-z.t<31536e6)return z}catch(e){}return null}
- function zapisz(mapy){try{localStorage.setItem(KL,JSON.stringify({t:Date.now(),mapy:!!mapy}))}catch(e){}ck.hidden=true;mapa()}
- var ck=d.getElementById('ck');
- if(ck){
-  ck.addEventListener('click',function(e){
-   var x=e.target.closest('button');if(!x)return;var k=x.dataset.ck;
-   if(k==='wszystkie')zapisz(true);
-   else if(k==='niezbedne')zapisz(false);
-   else if(k==='ustawienia'){var u=ck.querySelector('.ck-ust');if(u.hidden){u.hidden=false;x.textContent='Zapisz wybór'}else zapisz(d.getElementById('ck-mapy').checked)}
-  });
- }
- [].forEach.call(d.querySelectorAll('[data-ck-otworz]'),function(x){x.addEventListener('click',function(){var z=czytaj();if(z)d.getElementById('ck-mapy').checked=z.mapy;ck.hidden=false})});
-
- /* mapa Google: wczytywana przy przewinieciu, chyba ze odmowiono zgody */
- function mapa(){
-  var el=d.querySelector('.mapa[data-src]');if(!el)return;
-  var z=czytaj(),zast=el.querySelector('.zast'),ifr=el.querySelector('iframe');
-  if(z&&z.mapy===false){if(ifr)ifr.remove();zast.hidden=false;return}
-  if(ifr)return;
-  function wstaw(){if(el.querySelector('iframe'))return;var f=d.createElement('iframe');f.src=el.dataset.src;f.title='Mapa dojazdu - Baseny Skimmer, Wierzyce';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';el.appendChild(f);zast.hidden=true}
-  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(w){if(w[0].isIntersecting){io.disconnect();wstaw()}},{rootMargin:'300px'});io.observe(el)}else wstaw();
- }
- mapa();
-
  /* formularz: temat z adresu, w wersji testowej bez wysylki */
  var f=d.querySelector('form.zap');
  if(f){

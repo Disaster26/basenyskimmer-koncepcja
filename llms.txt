@@ -2,7 +2,7 @@
 
 > Rodzinna firma basenowa Skimmer Robert Kraczek z Wierzyc koło Gniezna (Wielkopolska), działająca od 2006 roku. Projektowanie, budowa i sprzedaż basenów kąpielowych: ogrodowych, hotelowych i wewnętrznych, wraz z wyposażeniem. Zadaszenia basenowe, wanny SPA i sauny, serwis i remonty basenów.
 
-Dane firmy: Skimmer Robert Kraczek, Osiedle Leśne 4, 62-262 Wierzyce, NIP 7772920715
+Dane firmy: Skimmer Robert Kraczek, Wierzyce koło Gniezna, NIP 7772920715
 Telefon: 571 333 221
 E-mail: biuro@basenyskimmer.pl
 
@@ -17,4 +17,4 @@ E-mail: biuro@basenyskimmer.pl
 ## Więcej
 
 - [Realizacje](https://basenyskimmer.pl/realizacje.html): galeria zdjęć basenów, zadaszeń i wanien SPA
-- [Kontakt](https://basenyskimmer.pl/kontakt.html): formularz zapytania i mapa dojazdu
+- [Kontakt](https://basenyskimmer.pl/kontakt.html): telefon, e-mail i formularz zapytania
